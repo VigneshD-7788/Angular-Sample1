@@ -28,7 +28,28 @@
 </div>
 </div>
 </nav>
+ <!-- Modified with databinding want to show -->
+<!-- <app-expense-entry></app-expense-entry> -->
+<!-- Want to show -->
+<app-expense-entry-list></app-expense-entry-list>
 
-<app-expense-entry></app-expense-entry>
+<!-- Without Responsive webpage below code, create with custom css container to avoid irresponsive web page -->
+
+<!-- <div style="margin-top: 5%;margin-left: 40%;">
+  <h3 style="margin-left: -27px;">{{ title }}</h3>
+  <img [@enlarge]="isEnlarge ? 'end' : 'start'" src="assets/images/leo.jpg" style="height: 200px" />
+  <br><br>
+  <button (click)='triggerAnimation()' class="btn btn-primary" style="margin-left: 8%;">{{ this.buttonText }}</button> 
+</div> -->
+
+<!-- With Responsive Page below code -->
+<!-- <div class = "container">
+  <h3>{{ title }}</h3>
+  <img [@enlarge]="isEnlarge ? 'end' : 'start'" src="assets/images/leo.jpg" style="height: 200px" />
+  <br><br>
+  <button (click)='triggerAnimation()' class="btn btn-primary">{{ this.buttonText }}</button> 
+</div> -->
+
+
 
   
