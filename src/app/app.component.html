@@ -1,7 +1,7 @@
 <!-- <h1>{{title}}</h1>
 <app-expense-entry></app-expense-entry> -->
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
   <div class="container">
   <a class="navbar-brand" href="#">{{ title }}</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse"  data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-  expanded="false" aria-label="Toggle navigation">
@@ -27,11 +27,11 @@
 </ul>
 </div>
 </div>
-</nav>
+</nav> -->
  <!-- Modified with databinding want to show -->
 <!-- <app-expense-entry></app-expense-entry> -->
 <!-- Want to show -->
-<app-expense-entry-list></app-expense-entry-list>
+<!-- <app-expense-entry-list></app-expense-entry-list> -->
 
 <!-- Without Responsive webpage below code, create with custom css container to avoid irresponsive web page -->
 
@@ -49,6 +49,19 @@
   <br><br>
   <button (click)='triggerAnimation()' class="btn btn-primary">{{ this.buttonText }}</button> 
 </div> -->
+
+
+<h2>Hi User, Welcome to Angular</h2>
+<div>
+  <ul>
+    <li><a routerLink="/" >Home</a></li>
+    <li><a routerLink="/expense-entry">Expense Entry</a></li>
+    <li><a routerLink="/expense-entry-list">Expense Entry list</a></li>
+  </ul>
+</div>
+
+<router-outlet></router-outlet>
+
 
 
 
